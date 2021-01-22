@@ -19,7 +19,6 @@ var kilo  = kilometerToMeter(2);
 
 
 
-
 /*  ***********************
      budget Calculation here
     *********************** */
@@ -100,13 +99,13 @@ var totalHotelCost=hotelCost(reserveDays);
 
 function megaFriend(Friends) {
 
-    if(Friends.length < 0){
+    if(Friends.length <= 0){
         var error = "distance cannot be negative";
         return error;
     }
 
     var megaFriends = Friends[0];
-    for(let i = 0 ; i < Friends; i++) {
+    for(var i = 0 ; i < Friends. length; i++) {
         var getFriend = Friends[i];
         if(getFriend.length > megaFriends.length ){
 
@@ -117,4 +116,5 @@ function megaFriend(Friends) {
  }
  var bestFriends = ['Helal' ,'Raju Ahmmad Hridoy', 'sms saimoon bai', 'jalal bai' , 'Nurul Huda' , 'mustafizur','mh meheraj'];
  var myMegaFriend = megaFriend(bestFriends);
- console.log(myMegaFriend)
+
+ 
